@@ -1,0 +1,38 @@
+name: ci
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: node:12-alpine
+    steps:
+      - name: Packages
+        run: apk add --no-cache ca-certificates git openssh-client tar
+      - uses: actions/checkout@v2
+      - uses: fregante/setup-git-user@v1
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            /tmp/.yarn_cache
+          key: v4-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+      - name: Yarn
+        run: yarn --pure-lockfile --cache-folder /tmp/.yarn_cache
+      - name: Release
+        if: github.ref == 'refs/heads/main'
+        uses: GoogleCloudPlatform/release-please-action@v2
+        id: release
+        with:
+          release-type: node
+          package-name: '@seismic/mantle'
+          changelog-types: '[{"type":"feat","section":":rocket:  Features","hidden":false},{"type":"fix","section":":bug: Bug Fixes","hidden":false},{"type":"refactor","section":":sunglasses:  Refactor","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false},{"type":"ci","section":"CI","hidden":false}]'
+      - name: Release info
+        if: ${{ steps.release.outputs }}
+        run: |
+          echo "${{ toJSON(steps.release.outputs) }}"
+      - name: Publish
+        if: ${{ github.ref == 'refs/heads/main' && steps.release.outputs.release_created }}
+        run: echo "Publishing"
+      - name: Docs
+        if: ${{ github.ref == 'refs/heads/main' && steps.release.outputs.release_created }}
+        run: echo "Documentation"
