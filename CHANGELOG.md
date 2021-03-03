@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.0.0...v1.0.1) (2021-03-03)
+
+
+### :bug: Bug Fixes
+
+* **ci:** continue on step error ([#4](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/4)) ([08db1bc](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/08db1bca63539a9039badb8848ef8d501a917d67))
+
 ## 1.0.0 (2021-03-02)
 
 
