@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.0.1...v1.1.0) (2021-03-03)
+
+
+### :rocket:  Features
+
+* intro `add` & “multiply” ([#6](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/6)) ([d496ea5](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/d496ea54e9ff62f4b34ef779fcb617f323bf933c))
+
 ### [1.0.1](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.0.0...v1.0.1) (2021-03-03)
 
 
