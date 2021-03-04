@@ -1,6 +1,6 @@
 {
   "name": "zeflo_test_release_plz",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "git@github.com:ze-flo/zeflo_test_release_plz.git",
   "author": "Florent <florent.mathieu@gmail.com>",
