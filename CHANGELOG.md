@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.1.1...v1.2.0) (2021-03-04)
+
+
+### :rocket:  Features
+
+* **utils:** add `divide` function ([#13](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/13)) ([04ba398](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/04ba3987469c899c4387d2823299aeda1441e77d))
+* **utils:** add subtract function ([#10](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/10)) ([c325e7b](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/c325e7ba8d81ea1db5518b23bada3ddd3978110b))
+* **utils:** add subtract function ([#12](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/12)) ([b697879](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/b697879914d3fffeb98e2c80ab9d1b3ff719248e))
+
 ### [1.1.1](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.1.0...v1.1.1) (2021-03-04)
 
 
