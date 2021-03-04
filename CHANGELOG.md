@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.2.0...v2.0.0) (2021-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **utils:** `add` has been renamed to `sum`
+
+### :sunglasses:  Refactor
+
+* **utils:** rename `add` function to `sum` ([#14](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/14)) ([34456dd](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/34456dd456e3f5254d2ee881e16c0c2dc1a981bf))
+
 ## [1.2.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.1.1...v1.2.0) (2021-03-04)
 
 
