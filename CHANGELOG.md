@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.1.0...v1.1.1) (2021-03-04)
+
+
+### CI
+
+* remove yarn step ([#8](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/8)) ([8ba0a59](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/8ba0a599173923d371ff5775a610155a7f40461e))
+
 ## [1.1.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.0.1...v1.1.0) (2021-03-03)
 
 
