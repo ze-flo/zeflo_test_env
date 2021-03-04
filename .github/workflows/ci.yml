@@ -8,16 +8,6 @@ jobs:
       - name: Packages
         run: apk add --no-cache ca-certificates git openssh-client tar
       - uses: actions/checkout@v2
-      - uses: fregante/setup-git-user@v1
-      - name: Cache
-        uses: actions/cache@v2
-        with:
-          path: |
-            node_modules
-            /tmp/.yarn_cache
-          key: v4-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-      - name: Yarn
-        run: yarn --pure-lockfile --cache-folder /tmp/.yarn_cache
       - name: Release
         if: github.ref == 'refs/heads/main'
         uses: GoogleCloudPlatform/release-please-action@v2
