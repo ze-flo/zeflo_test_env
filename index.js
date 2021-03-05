@@ -12,8 +12,13 @@ function divide(a = 0, b = 0) {
     return a / b
 }
 
+function subtract(a, b) {
+    return a - b
+}
+
 module.exports = {
     sum,
     multiply,
     divide,
+    subtract,
 }
