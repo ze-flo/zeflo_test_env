@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v2.0.0...v3.0.0) (2021-03-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* subtract has been removed
+
+### chore
+
+* testing stuff ([#16](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/16)) ([c0794bd](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/c0794bd0cfad321efca8ec7cbccb4c2bfbe1558e))
+
+
+### :rocket:&nbsp;&nbsp;Features
+
+* **utils:** add subtract ([#18](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/18)) ([c224f78](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/c224f78bf4d89032fb69d24911b2d1b9a86be0ef))
+
 ## [2.0.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v1.2.0...v2.0.0) (2021-03-04)
 
 
