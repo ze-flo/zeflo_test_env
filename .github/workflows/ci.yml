@@ -26,5 +26,5 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && steps.release.outputs.release_created }}
         run: echo "Publishing"
       - name: Docs
-        if: ${{ github.ref == 'refs/heads/main' && steps.release.outputs.release_created }}
+        if: ${{ contains(github.event.head_commit.message, '[update styleguide]') || (github.ref == 'refs/heads/master' && steps.release.outputs.release_created) }}
         run: echo "Documentation"
