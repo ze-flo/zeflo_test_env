@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v3.0.0...v3.1.0) (2021-03-25)
+
+
+### :rocket:&nbsp;&nbsp;Features
+
+* add identity fn ([#20](https://www.github.com/ze-flo/zeflo_test_release_plz/issues/20)) ([c350862](https://www.github.com/ze-flo/zeflo_test_release_plz/commit/c3508624f8ffe772608c4db70c9f6722fdd9b0a8))
+
 ## [3.0.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v2.0.0...v3.0.0) (2021-03-05)
 
 
