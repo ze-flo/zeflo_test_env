@@ -16,9 +16,14 @@ function subtract(a, b) {
     return a - b
 }
 
+function identity(a) {
+    return a
+}
+
 module.exports = {
     sum,
     multiply,
     divide,
     subtract,
+    identity,
 }
