@@ -1,4 +1,4 @@
-name: Pull Request Labels
+name: Check VERIFIED label
 on:
   pull_request:
     types: [opened, labeled, unlabeled, synchronize]
@@ -11,6 +11,7 @@ jobs:
           GITHUB_CONTEXT: ${{ toJSON(github.event.pull_request.title) }}
         run: echo "$GITHUB_CONTEXT"
       - uses: mheap/github-action-required-labels@v1
+        if: ${{ startsWith(github.event.pull_request.title, 'feat:') }}
         with:
           mode: exactly
           count: 1
