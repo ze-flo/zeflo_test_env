@@ -6,8 +6,12 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
+      - name: Dump GitHub.event.pull_request
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github.event.pull_request.title) }}
+        run: echo "$GITHUB_CONTEXT"
       - uses: mheap/github-action-required-labels@v1
         with:
           mode: exactly
           count: 1
-          labels: 'VERIFIED'
+          labels: 'VERIFIED '
