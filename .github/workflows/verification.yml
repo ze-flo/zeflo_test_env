@@ -1,18 +1,18 @@
 name: Check VERIFIED label
 on:
   pull_request:
-    types: [opened, labeled, unlabeled, synchronize]
+    types: [opened, labeled, unlabeled, edited, synchronize]
 jobs:
   label:
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub.event.pull_request
         env:
-          GITHUB_CONTEXT: ${{ toJSON(github.event.pull_request.title) }}
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
       - uses: mheap/github-action-required-labels@v1
         if: ${{ startsWith(github.event.pull_request.title, 'feat:') }}
         with:
           mode: exactly
-          count: 1
-          labels: 'VERIFIED '
+          count: 2
+          labels: 'newComponent, verified'
