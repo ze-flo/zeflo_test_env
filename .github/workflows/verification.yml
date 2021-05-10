@@ -11,8 +11,8 @@ jobs:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
       - uses: mheap/github-action-required-labels@v1
-        if: ${{ startsWith(github.event.pull_request.title, 'feat:') && contains( github.event.pull_request.labels.*.name, 'new component') }}
+        if: ${{ startsWith(github.event.pull_request.title, 'feat:') && !contains( github.event.pull_request.labels.*.name, 'skip verification') }}
         with:
           mode: exactly
-          count: 2
-          labels: 'new component, verified'
+          count: 1
+          labels: 'verified'
