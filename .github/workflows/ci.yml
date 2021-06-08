@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Packages
         run: apk add --no-cache ca-certificates git openssh-client tar
+      - name: Branch name
+        run: echo "v5-${{ runner.os }}-${GITHUB_REF##*/}"
       - uses: actions/checkout@v2
       - name: Release
         if: github.ref == 'refs/heads/main'
