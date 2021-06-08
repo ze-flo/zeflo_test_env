@@ -9,6 +9,30 @@ jobs:
         run: apk add --no-cache ca-certificates git openssh-client tar
       - name: Branch name
         run: echo "v5-${{ runner.os }}-${GITHUB_REF##*/}"
+
+      - name: Set branch name
+        id: set_branch
+        run: echo ::set-output name=branch::${GITHUB_REF##*/}
+      - name: Check output
+        run: echo ${{ steps.set_branch.outputs.branch }}
+      - name: Cache - Eslint
+        uses: actions/cache@v2
+        with:
+          path: tmp/.eslintcache
+          key: v5-eslint-${{ runner.os }}-${{ steps.set_branch.outputs.branch }}
+          restore-keys: |
+            v5-eslint-${{ runner.os }}-${{ steps.set_branch.outputs.branch }}
+            v5-eslint-${{ runner.os }}-
+      - name: Set env.BRANCH
+        run: echo "BRANCH=$(echo ${GITHUB_REF##*/})" >> $GITHUB_ENV
+      - name: Cache - Eslint using env.BRANCH
+        uses: actions/cache@v2
+        with:
+          path: tmp/.eslintcache
+          key: v5-eslint-${{ runner.os }}-${{ env.BRANCH }}
+          restore-keys: |
+            v5-eslint-${{ runner.os }}-${{ env.BRANCHs }}
+            v5-eslint-${{ runner.os }}-
       - uses: actions/checkout@v2
       - name: Release
         if: github.ref == 'refs/heads/main'
