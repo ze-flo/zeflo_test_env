@@ -6,7 +6,7 @@ jobs:
     container: node:12-alpine
     steps:
       - name: Packages
-        run: apk add --no-cache ca-certificates git openssh-client tar
+        run: apk add --no-cache ca-certificates git openssh-client tar tree
       - name: Branch name
         run: echo "v5-${{ runner.os }}-${GITHUB_REF##*/}"
 
@@ -18,7 +18,7 @@ jobs:
       - name: Cache - Eslint
         uses: actions/cache@v2
         with:
-          path: tmp/.eslintcache
+          path: ./tmp/.eslintcache
           key: v5-eslint-${{ runner.os }}-${{ steps.set_branch.outputs.branch }}
           restore-keys: |
             v5-eslint-${{ runner.os }}-${{ steps.set_branch.outputs.branch }}
@@ -28,7 +28,7 @@ jobs:
       - name: Cache - Eslint using env.BRANCH
         uses: actions/cache@v2
         with:
-          path: tmp/.eslintcache
+          path: ./tmp/.eslintcache
           key: v5-eslint-${{ runner.os }}-${{ env.BRANCH }}
           restore-keys: |
             v5-eslint-${{ runner.os }}-${{ env.BRANCHs }}
@@ -48,6 +48,20 @@ jobs:
         if: ${{ steps.release.outputs }}
         run: echo "${{ toJSON(steps.release.outputs) }}"
         continue-on-error: true
+      - name: See dir / root
+        run: tree ~/ -d
+      - name: See files / current folder
+        run: tree -a
+      - name: See files / root
+        run: tree ~/ -a
+      - name: See dir ../
+        run: tree ../ -d
+      - name: See files ../
+        run: tree ../ -a
+      - name: See files ../../
+        run: tree ../../ -a
+      - name: See files ../../
+        run: tree ../../ -d
       - name: Publish
         if: ${{ github.ref == 'refs/heads/main' && steps.release.outputs.release_created }}
         run: echo "Publishing"
