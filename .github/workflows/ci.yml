@@ -43,7 +43,7 @@ jobs:
           package-name: '@seismic/mantle'
           # default types: https://github.com/conventional-changelog/conventional-changelog/blob/8076d4666c2a3ea728b95bf1e4e78d4c7189b1dc/packages/conventional-changelog-conventionalcommits/writer-opts.js#L171-L184
           # hidden sections are shown if breaking change
-          changelog-types: '[{"type":"feat","section":":rocket:&nbsp;&nbsp;Features"},{"type":"fix","section":":bug:&nbsp;&nbsp;Bug Fixes"},{"type":"refactor","section":":sunglasses:&nbsp;&nbsp;Refactor","hidden":true},{"type":"perf","section":":bullettrain_front:&nbsp;&nbsp;Performance Improvements"}]'
+          changelog-types: '[{"type":"feat","section":":rocket:&nbsp;&nbsp;Features"},{"type":"fix","section":":bug:&nbsp;&nbsp;Bug Fixes"},{"type":"refactor","section":":sunglasses:&nbsp;&nbsp;Refactor","hidden":true},{"type":"perf","section":":bullettrain_front:&nbsp;&nbsp;Performance Improvements"},{"type":"docs","section":"Documentation","hidden":false }]'
       - name: Release info
         if: ${{ steps.release.outputs }}
         run: echo "${{ toJSON(steps.release.outputs) }}"
