@@ -16,8 +16,8 @@ function subtract(a, b) {
     return a - b
 }
 
-function identity(a) {
-    return a
+function identity(v) {
+    return v
 }
 
 module.exports = {
