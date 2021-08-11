@@ -1,5 +1,18 @@
 # Changelog
 
+### [3.1.1](https://www.github.com/ze-flo/zeflo_test_env/compare/v3.1.0...v3.1.1) (2021-08-11)
+
+
+### :bug:&nbsp;&nbsp;Bug Fixes
+
+* fixed something ([#30](https://www.github.com/ze-flo/zeflo_test_env/issues/30)) ([22e80f4](https://www.github.com/ze-flo/zeflo_test_env/commit/22e80f44d991f62ad8416b435e9a05c006f46e1d))
+
+
+### Documentation
+
+* add dev docs ([#28](https://www.github.com/ze-flo/zeflo_test_env/issues/28)) ([2e76b2e](https://www.github.com/ze-flo/zeflo_test_env/commit/2e76b2eed75b5a9c1735dc431d34f81ad3269408))
+* more docs ([22e80f4](https://www.github.com/ze-flo/zeflo_test_env/commit/22e80f44d991f62ad8416b435e9a05c006f46e1d))
+
 ## [3.1.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v3.0.0...v3.1.0) (2021-03-25)
 
 
