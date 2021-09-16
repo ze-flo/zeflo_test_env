@@ -1,6 +1,12 @@
 name: ci
 on: [push]
 jobs:
+  shouldRun:
+    runs-on: ubuntu-latest
+    env:
+      VALID_EVENT: ${{ github.event_name == 'push' }}
+    steps:
+      - run: if [[ "$VALID_EVENT" == true ]]; then echo "true"; else echo "false"; fi
   build:
     runs-on: ubuntu-latest
     container: node:12-alpine
