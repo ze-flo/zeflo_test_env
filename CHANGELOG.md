@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://www.github.com/ze-flo/zeflo_test_env/compare/v3.0.0...v4.0.0) (2021-10-21)
+
+
+### chore
+
+* release 3.0.1 ([43d055e](https://www.github.com/ze-flo/zeflo_test_env/commit/43d055e4936211875e352b93d34e7a5ad5bdc341))
+* release 3.0.1 ([e2151f8](https://www.github.com/ze-flo/zeflo_test_env/commit/e2151f837f12ccef1b6d2019243aaa6ca39971c6))
+* release 3.2.0 ([7e721c7](https://www.github.com/ze-flo/zeflo_test_env/commit/7e721c7ef9cd81c8f254069f4ee2d99d010ef7bd))
+* release 4.0.0 ([ff81b3a](https://www.github.com/ze-flo/zeflo_test_env/commit/ff81b3a386fbf3f92c2ff18e9eaba92809225054))
+* release 4.0.0 ([465eaea](https://www.github.com/ze-flo/zeflo_test_env/commit/465eaeaf1e65d24b109cea2ec6a134072d9bfa5e))
+
 ## [3.0.0](https://www.github.com/ze-flo/zeflo_test_env/compare/v3.1.0...v3.0.0) (2021-10-21)
 
 
