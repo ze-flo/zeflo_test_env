@@ -1,5 +1,33 @@
 # Changelog
 
+## [3.0.0](https://www.github.com/ze-flo/zeflo_test_env/compare/v3.1.0...v3.0.0) (2021-10-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove identity (#32)
+
+### :bug:&nbsp;&nbsp;Bug Fixes
+
+* fixed something ([#30](https://www.github.com/ze-flo/zeflo_test_env/issues/30)) ([22e80f4](https://www.github.com/ze-flo/zeflo_test_env/commit/22e80f44d991f62ad8416b435e9a05c006f46e1d))
+
+
+### Documentation
+
+* add dev docs ([#28](https://www.github.com/ze-flo/zeflo_test_env/issues/28)) ([2e76b2e](https://www.github.com/ze-flo/zeflo_test_env/commit/2e76b2eed75b5a9c1735dc431d34f81ad3269408))
+* more docs ([22e80f4](https://www.github.com/ze-flo/zeflo_test_env/commit/22e80f44d991f62ad8416b435e9a05c006f46e1d))
+
+
+### :sunglasses:&nbsp;&nbsp;Refactor
+
+* remove identity ([#32](https://www.github.com/ze-flo/zeflo_test_env/issues/32)) ([8175ac5](https://www.github.com/ze-flo/zeflo_test_env/commit/8175ac5c933705c0cfe300589b17c864e69adfa8))
+
+
+### chore
+
+* release 3.0.0 ([ec10e5a](https://www.github.com/ze-flo/zeflo_test_env/commit/ec10e5ae91e8f31259e4a7aa8fe7bdbcc0b60dc9))
+* release 3.1.0 ([21f8b1b](https://www.github.com/ze-flo/zeflo_test_env/commit/21f8b1bde49967bc9af9630f0576b8e3c22c07d2))
+
 ## [3.1.0](https://www.github.com/ze-flo/zeflo_test_release_plz/compare/v3.0.0...v3.1.0) (2021-03-25)
 
 
